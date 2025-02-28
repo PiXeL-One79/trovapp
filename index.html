@@ -38,6 +38,25 @@
         .links a:hover {
             text-decoration: underline;
         }
+        .link-group {
+    margin-bottom: 1.5rem;
+}
+.link-group h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+.link-group a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #26A69A;
+    text-decoration: none;
+}
+.link-group a:hover {
+    text-decoration: underline;
+}
+.contact {
+    margin-top: 2rem;
+}
     </style>
 </head>
 <body>
@@ -62,11 +81,26 @@
         </div>
         
         <div class="links">
-            <h3>Link utili:</h3>
-            <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a>
-            <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
-            <p>Per supporto: <a href="mailto:developer.pixel.app@gmail.com">developer.pixel.app@gmail.com</a></p>
-        </div>
+    <h3>Link utili:</h3>
+    <!-- Privacy Policy e pagine correlate -->
+    <div class="link-group">
+        <h4>Privacy e Sicurezza:</h4>
+        <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a>
+        <a href="https://pixel-one79.github.io/trovapp-privacy/account-deletion.html">Cancellazione Account</a>
+        <a href="https://pixel-one79.github.io/trovapp-privacy/safety-standards.html">Standard di Sicurezza</a>
+    </div>
+    
+    <!-- Termini di servizio -->
+    <div class="link-group">
+        <h4>Termini di Servizio:</h4>
+        <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
+    </div>
+    
+    <div class="contact">
+        <h4>Contatti:</h4>
+        <p>Per supporto: <a href="mailto:developer.pixel.app@gmail.com">developer.pixel.app@gmail.com</a></p>
+    </div>
+</div>
     </div>
 </body>
 </html>
