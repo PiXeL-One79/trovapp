@@ -18,6 +18,27 @@
             text-align: center;
             padding: 2rem 0;
         }
+        .nav {
+            background-color: #f8f8f8;
+            padding: 10px 0;
+            border-bottom: 1px solid #e7e7e7;
+        }
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav a {
+            margin-right: 20px;
+            color: #26A69A;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -26,37 +47,62 @@
         .app-description {
             margin-bottom: 2rem;
         }
-        .links {
-            margin-top: 2rem;
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 2rem 0;
         }
-        .links a {
-            display: inline-block;
-            margin-right: 1rem;
+        .feature-card {
+            flex-basis: 48%;
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .links {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e7e7e7;
+        }
+        .link-group {
+            margin-bottom: 1.5rem;
+        }
+        .link-group h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .link-group a {
+            display: block;
+            margin-bottom: 0.5rem;
             color: #26A69A;
             text-decoration: none;
         }
-        .links a:hover {
+        .link-group a:hover {
             text-decoration: underline;
         }
-        .link-group {
-    margin-bottom: 1.5rem;
-}
-.link-group h4 {
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-.link-group a {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #26A69A;
-    text-decoration: none;
-}
-.link-group a:hover {
-    text-decoration: underline;
-}
-.contact {
-    margin-top: 2rem;
-}
+        .contact {
+            margin-top: 2rem;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            border-top: 1px solid #e7e7e7;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #26A69A;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -65,42 +111,78 @@
         <p>L'app che connette chi perde e chi trova</p>
     </header>
     
+    <div class="nav">
+        <div class="nav-container">
+            <a href="https://pixel-one79.github.io/trovapp/">Home</a>
+            <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a>
+            <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
+            <a href="https://pixel-one79.github.io/trovapp-privacy/safety-standards.html">Standard di Sicurezza</a>
+            <a href="https://pixel-one79.github.io/trovapp-privacy/account-deletion.html">Cancellazione Account</a>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="app-description">
             <h2>Cos'è TrovApp?</h2>
-            <p>TrovApp è l'applicazione che aiuta le persone a ritrovare ciò che hanno perso grazie alla community. Semplice, utile ed intuitiva, permette di:</p>
-            <ul>
-                <li>Pubblicare annunci di oggetti persi</li>
-                <li>Segnalare oggetti trovati</li>
-                <li>Mettersi in contatto facilmente con gli altri utenti</li>
-                <li>Condividere annunci sui social network</li>
-            </ul>
+            <p>TrovApp è l'applicazione che aiuta le persone a ritrovare ciò che hanno perso grazie alla community. Semplice, utile ed intuitiva, connette chi ha smarrito qualcosa con chi l'ha trovata.</p>
+            
+            <div class="feature-section">
+                <div class="feature-card">
+                    <h3>Per chi ha perso qualcosa</h3>
+                    <p>Hai smarrito un oggetto importante? Con TrovApp puoi:</p>
+                    <ul>
+                        <li>Pubblicare un annuncio dettagliato con foto e descrizione</li>
+                        <li>Specificare la zona in cui hai perso l'oggetto</li>
+                        <li>Ricevere notifiche quando qualcuno trova un oggetto simile</li>
+                        <li>Offrire una ricompensa (opzionale)</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Per chi ha trovato qualcosa</h3>
+                    <p>Hai trovato un oggetto e vuoi restituirlo? Con TrovApp puoi:</p>
+                    <ul>
+                        <li>Pubblicare un annuncio dell'oggetto ritrovato</li>
+                        <li>Aiutare qualcuno a ritrovare ciò che ha perso</li>
+                        <li>Conservare l'anonimato fino a quando non decidi di metterti in contatto</li>
+                        <li>Contribuire a creare una community più solidale</li>
+                    </ul>
+                </div>
+            </div>
             
             <h2>Come funziona?</h2>
-            <p>Hai perso qualcosa? Pubblica un annuncio con foto, luogo e descrizione. Hai trovato qualcosa? Segnalalo sulla nostra piattaforma e aiuta qualcuno a ritrovare ciò che ha perso.</p>
+            <p>L'app ti permette di cercare oggetti smarriti o di pubblicare annunci per oggetti persi o trovati. Grazie al sistema di geolocalizzazione, puoi visualizzare gli oggetti nella tua zona. Quando trovi una corrispondenza, puoi metterti in contatto con l'altro utente attraverso l'app.</p>
         </div>
         
         <div class="links">
-    <h3>Link utili:</h3>
-    <!-- Privacy Policy e pagine correlate -->
-    <div class="link-group">
-        <h4>Privacy e Sicurezza:</h4>
-        <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a>
-        <a href="https://pixel-one79.github.io/trovapp-privacy/account-deletion.html">Cancellazione Account</a>
-        <a href="https://pixel-one79.github.io/trovapp-privacy/safety-standards.html">Standard di Sicurezza</a>
+            <h3>Documenti e Link utili:</h3>
+            
+            <div class="link-group">
+                <h4>Privacy e Sicurezza:</h4>
+                <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a>
+                <a href="https://pixel-one79.github.io/trovapp-privacy/account-deletion.html">Cancellazione Account</a>
+                <a href="https://pixel-one79.github.io/trovapp-privacy/safety-standards.html">Standard di Sicurezza</a>
+            </div>
+            
+            <div class="link-group">
+                <h4>Termini di Servizio:</h4>
+                <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
+            </div>
+            
+            <div class="contact">
+                <h4>Contatti:</h4>
+                <p>Per supporto: <a href="mailto:developer.pixel.app@gmail.com">developer.pixel.app@gmail.com</a></p>
+            </div>
+        </div>
     </div>
     
-    <!-- Termini di servizio -->
-    <div class="link-group">
-        <h4>Termini di Servizio:</h4>
-        <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
-    </div>
-    
-    <div class="contact">
-        <h4>Contatti:</h4>
-        <p>Per supporto: <a href="mailto:developer.pixel.app@gmail.com">developer.pixel.app@gmail.com</a></p>
-    </div>
-</div>
+    <div class="footer">
+        <p>© 2024 TrovApp. Tutti i diritti riservati.</p>
+        <p>
+            <a href="https://pixel-one79.github.io/trovapp/">Home</a> | 
+            <a href="https://pixel-one79.github.io/trovapp-privacy/">Privacy Policy</a> | 
+            <a href="https://pixel-one79.github.io/trovapp-terms/">Termini di Servizio</a>
+        </p>
     </div>
 </body>
 </html>
