@@ -28,16 +28,18 @@
             background-color: #f8f8f8;
             padding: 10px 0;
             border-bottom: 1px solid #e7e7e7;
+            text-align: center; /* Centra la navigazione */
         }
         .nav-container {
             max-width: 1100px;
-            margin: 0 auto;
+            margin: 0 auto; /* Centra il contenitore */
             padding: 0 20px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center; /* Centra i link */
         }
         .nav a {
-            margin-right: 20px;
+            margin: 0 10px; /* Spazio uguale a destra e sinistra */
             color: #26A69A;
             text-decoration: none;
             font-weight: 500;
@@ -47,7 +49,7 @@
         }
         .container {
             max-width: 1100px;
-            margin: 0 auto;
+            margin: 0 auto; /* Centra il contenitore principale */
             padding: 2rem;
         }
         .app-description {
@@ -106,8 +108,20 @@
             color: #26A69A;
             text-decoration: none;
         }
-        .footer a:hover {
-            text-decoration: underline;
+        
+        /* Responsività su dispositivi mobili */
+        @media (max-width: 768px) {
+            .feature-card {
+                flex-basis: 100%;
+            }
+            
+            .nav a {
+                margin: 5px 10px;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
